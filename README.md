@@ -1,6 +1,13 @@
 # ghost-typer.js
 Jquery Plugin for simulating typing automatically
 
+## Demo
+Have a demo? Let me know and I'll include it here.
+
+![Ghost Typing](ghost.gif)
+
+Another nice demo at: [My website](https://lokeshd.com)
+
 ## How to use
 Ghost-typer have the defaults set to values which you would normally prefer. But, you can customize a lot of things if you want more control such as speed control, pause timings, repetitions & custom callbacks.
 
@@ -59,6 +66,7 @@ Options which can be passed as key value pairs as options object.
 | timePause: Integer      | time(in ms) interval for which the text stays after its typed                                                                        | 1000          | N         |
 | repeat: Boolean         | Whether or not to repeat the whole thing indefinitely                                                                                | true          | N         |
 | callback: function      | The callback function which will get called after the whole process is completed. It is applicable only when repeat is set to false. | undefined     | N         |
+=======
 
 ## Contribute
 + Report issues & add feature requests
