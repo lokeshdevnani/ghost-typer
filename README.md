@@ -1,5 +1,7 @@
 # ghost-typer.js
-Jquery Plugin for simulating typing automatically
+Jquery Plugin for simulating typing magically.
+
+See [https://lokeshthegenius.github.io/ghost-typer](https://lokeshthegenius.github.io/ghost-typer)
 
 ## Demo
 Have a demo? Let me know and I'll include it here.
