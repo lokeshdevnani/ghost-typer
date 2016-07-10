@@ -26,10 +26,22 @@ And `messages` is an option through which we will pass the text we want it to si
 **Note**: `messages` is an array of text which will be displayed one at a time and is the only option which is mandatory.
 
 ### Advanced Usage
-There are a couple of options which can be altered
+There are a couple of options which can be altered by passing an options object.
 
 ```
+$("#typing").ghosttyper(options);
+```
+```
 $("#typing").ghosttyper({
-    messages: ['anything', 'you want', 'it to','type']
+    messages: ['web development', '<coding>', 'dancing','technology'],
+    timeWrite: 50,  //time between each chracter
+    timeDelete: 30, //time between each chracter
+    timePause: 800, //time between each chracter
+    repeat: false,  //loop it indefinitely
+    callback: function() {
+        console.log('called when the entire array of messages has been completed.');
+    }
 });
 ```
+All the above options is optional & can be left off.
+**Note**: The callback will only be called after completion of entire process. Thus, will never be called if repeat is set to true.
