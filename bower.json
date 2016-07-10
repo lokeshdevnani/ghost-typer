@@ -1,6 +1,6 @@
 {
     "name": "ghosttyper",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "main": "ghost-typer.min.js",
     "ignore": [
         "ghost.gif",
