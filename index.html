@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ghost Typer | By Lokesh Devnani</title>
+<style>
+.text{
+	padding: 50px;
+	margin: 50px;
+	font-size: 30px;
+}
+.text span{
+	color: #2A5;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+	<div class="text">
+		Hello World, <br>
+		I am <span>Lokesh Devnani</span> <br>
+		And I love <span id="ghost"></span>.
+	</div>
+
+	<script src="jquery-3.0.0.min.js"></script>
+	<script src="ghost-typer.js"></script>
+	<script>
+		$("#ghost").ghosttyper({
+			messages: ['web development', '<coding>', 'dancing','technology'],
+			timeWrite: 100,
+			timeDelete: 50,
+			timePause: 1000
+		});
+	</script>
+</body>
+</html>
