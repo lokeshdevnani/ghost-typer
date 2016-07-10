@@ -8,6 +8,14 @@ Have a demo? Let me know and I'll include it here.
 
 Another nice demo at: [My website](https://lokeshd.com)
 
+## Installation
++ You can either download the files from here or just copy the code from the [file](ghost-typer.js) as its less than 2kb(uncompressed) and ~1kb(minified).
+
++ You can install it with bower
+```
+bower install ghosttyper
+```
+
 ## How to use
 Ghost-typer have the defaults set to values which you would normally prefer. But, you can customize a lot of things if you want more control such as speed control, pause timings, repetitions & custom callbacks.
 
