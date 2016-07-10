@@ -20,9 +20,130 @@
 
     <section class="main-content">
       <h1>
-<a id="ghost-typer" class="anchor" href="#ghost-typer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ghost-typer</h1>
+<a id="ghost-typerjs" class="anchor" href="#ghost-typerjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ghost-typer.js</h1>
 
 <p>Jquery Plugin for simulating typing automatically</p>
+
+<h2>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use</h2>
+
+<p>Ghost-typer have the defaults set to values which you would normally prefer. But, you can customize a lot of things if you want more control such as speed control, pause timings, repetitions &amp; custom callbacks.</p>
+
+<h3>
+<a id="basic-usage" class="anchor" href="#basic-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic Usage</h3>
+
+<p>Include Jquery in your document. Ghost-typer.js supports all versions of jquery.</p>
+
+<pre><code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Include ghost-typer.js after including Jquery</p>
+
+<pre><code>&lt;script src="ghost-typer.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Choose any div or span you want to target for typing simulation using jquery and apply the plugin by <code>selector.ghosttyper()</code></p>
+
+<pre><code>$("#typing").ghosttyper({
+    messages: ['anything', 'you want', 'it to','type']
+});
+</code></pre>
+
+<p>Here, <code>"#typing"</code> is the container for simulation which can be a <code>span</code> or a <code>div</code>.
+And <code>messages</code> is an option through which we will pass the text we want it to simulate the typing.</p>
+
+<p><strong>Note</strong>: <code>messages</code> is an array of text which will be displayed one at a time and is the only option which is mandatory.</p>
+
+<h3>
+<a id="advanced-usage" class="anchor" href="#advanced-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Advanced Usage</h3>
+
+<p>There are a couple of options which can be altered by passing an options object.</p>
+
+<pre><code>$("#typing").ghosttyper(options);
+</code></pre>
+
+<pre><code>$("#typing").ghosttyper({
+    messages: ['web development', '&lt;coding&gt;', 'dancing','technology'],
+    timeWrite: 50,  //time between displaying each chracter
+    timeDelete: 30, //time between removing(backspace) each chracter
+    timePause: 800, //waiting time after displaying text
+    repeat: false,  //loop it indefinitely
+    callback: function() {
+        console.log('called when the entire array of messages has been completed.');
+    }
+});
+</code></pre>
+
+<p>All the above options is optional &amp; can be left off.</p>
+
+<p><strong>Note</strong>: The callback will only be called after completion of entire process. Thus, will never be called if repeat is set to true.</p>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h2>
+
+<p>Options which can be passed as key value pairs as options object.</p>
+
+<table>
+<thead>
+<tr>
+<th>Options Key</th>
+<th>Description</th>
+<th>Default Value</th>
+<th>Mandatory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>messages: Array(String)</td>
+<td>The messages which will be ghost-typed</td>
+<td>undefined</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>timeWrite: Integer</td>
+<td>time(in ms) interval between displaying each character</td>
+<td>100</td>
+<td>N</td>
+</tr>
+<tr>
+<td>timeDelete: Integer</td>
+<td>time(in ms) interval between erasing each character</td>
+<td>50</td>
+<td>N</td>
+</tr>
+<tr>
+<td>timePause: Integer</td>
+<td>time(in ms) interval for which the text stays after its typed</td>
+<td>1000</td>
+<td>N</td>
+</tr>
+<tr>
+<td>repeat: Boolean</td>
+<td>Whether or not to repeat the whole thing indefinitely</td>
+<td>true</td>
+<td>N</td>
+</tr>
+<tr>
+<td>callback: function</td>
+<td>The callback function which will get called after the whole process is completed. It is applicable only when repeat is set to false.</td>
+<td>undefined</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="contribute" class="anchor" href="#contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contribute</h2>
+
+<ul>
+<li>Report issues &amp; add feature requests</li>
+<li>Clone the repo. Fix bugs, add features &amp; send a pull request.</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>Open source license <a href="LICENSE">GNU GPLv3</a></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/lokeshthegenius/ghost-typer">Ghost-typer</a> is maintained by <a href="https://github.com/lokeshthegenius">lokeshthegenius</a>.</span>
