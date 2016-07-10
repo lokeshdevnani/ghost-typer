@@ -1,0 +1,18 @@
+{
+    "name": "ghosttyper",
+    "version": "1.0.0",
+    "main": "ghost-typer.min.js",
+    "ignore": [
+        "ghost.gif",
+        "*.html",
+        "jquery-3.0.0.min.js",
+        ".gitignore",
+        "bower.json",
+        "LICENSE",
+        "package.json",
+        "README.md"
+    ],
+    "dependencies": {
+        "jquery": ">=1.10.2"
+    }
+}
