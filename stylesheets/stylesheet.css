@@ -245,3 +245,32 @@ a {
 .cf {
   zoom:1;
 }
+.text-demo{
+  background: #000;
+  padding: 0.5em;
+}
+.text-demo span{
+  color: #b5e853;
+}
+.text-demo em{
+  font-style: normal;
+  webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {opacity: 0.3; }
+  50% {opacity: 0; }
+  100% {opacity: 0.7; }
+}
+@-webkit-keyframes blink {
+  0% {opacity: 0.3; }
+  50% {opacity: 0; }
+  100% {opacity: 0.7; }
+}
+@-moz-keyframes blink {
+  0% {opacity: 0.3; }
+  50% {opacity: 0; }
+  100% {opacity: 0.7; }
+}

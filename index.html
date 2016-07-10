@@ -6,13 +6,10 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>Ghost-typer by lokeshthegenius</title>
+    <title>Ghost-typer by Lokesh Devnani</title>
   </head>
-
   <body>
-
     <header>
       <div class="container">
         <h1>Ghost-typer</h1>
@@ -32,7 +29,15 @@
 <a id="ghost-typerjs" class="anchor" href="#ghost-typerjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ghost-typer.js</h1>
 
 <p>Jquery Plugin for simulating typing automatically</p>
-
+<h2> Demo </h2>
+<div class="text-demo">
+  <div>Hello World!</div>
+  <div>I am <span>Ghost.</span></div>
+  <div>And I love <span id="ghost">Ghosts</span><em>|</em></div>
+</div>
+<p>Live Demo on my website: <a href="https://lokeshd.com">Lokesh Devnani</a></p>
+Have a demo to showcase? Submit a pull request.
+<p></p>
 <h2>
 <a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use</h2>
 
@@ -152,10 +157,19 @@ And <code>messages</code> is an option through which we will pass the text we wa
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
-<p>Open source license <a href="LICENSE">GNU GPLv3</a></p>
+<p>Open source license <a href="LICENSE">GNU GPLv3</a>
+<br>Maintained By: <a href="https://lokeshd.com">Lokesh Devnani</a></p>
       </section>
     </div>
 
-    
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="ghost-typer.min.js"></script>
+  <script>
+    $("#ghost").ghosttyper({
+      messages: ['you', 'javascript', 'jquery', 'github', 'typing', 'scary things', 'open source','Lokesh Devnani'],
+      timeWrite: 150,
+      timePause: 800
+    });
+  </script>
   </body>
 </html>
