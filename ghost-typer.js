@@ -8,7 +8,6 @@
         return this;
 
         function typing(slicer, del) {
-            console.log(slicer,del,settings.messages[index].length);
             setTimeout(function () {
                 slicer+= (del===true) ? (-1) : (1);
                 elem.text(settings.messages[index].slice(0, slicer));
